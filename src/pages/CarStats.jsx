@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../index.css";
 import axios from "axios";
+import Baseurl from "../api/Baseurl";
 
 function CarStats() {
   //State Hooks to set the Data Array
