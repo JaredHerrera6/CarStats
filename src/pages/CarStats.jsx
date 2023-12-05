@@ -25,7 +25,7 @@ function CarStats() {
     getYears();
   }, []);
   async function getYears() {
-    const api = "https://www.carqueryapi.com/api/0.3/?callback=?&cmd=getYears";
+    const api = "https://www.carqueryapi.com/api/0.3/?cmd=getYears";
     const result = await fetch(api, {
       headers: {
         Accept: "application/json",
