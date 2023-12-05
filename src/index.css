@@ -1,0 +1,356 @@
+
+body{
+    margin : 0px;
+    padding: 0px;
+    z-index: 1;
+    overflow-x: hidden;
+}
+main{
+    flex: 1;
+    background-color: rgb(60, 2, 18);
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    width:100%
+}
+/*NavBar Css*/
+.navbar{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color:transparent;
+    font-family:Allerta Stencil;
+    position: absolute;
+    top:0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    vertical-align: middle;
+    background-color: black;
+    opacity: 0.8;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 5%;
+}
+.project-title{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:whitesmoke;
+    text-decoration:underline;
+}
+
+.navbar-links ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links Li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li a:hover{
+    background-color: rgb(60, 2, 18);
+    color: aliceblue;
+}
+/*Footer css*/
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+    background-color:rgb(46, 44, 44);
+    text-align: center;
+}
+.fi-Link{
+    font-size:1.5rem;
+}
+.footer-title{
+    padding: 0;
+    margin:.5rem;
+    color:white;
+    text-decoration: none;
+}
+.footer-links ul{
+    margin:0;
+    padding:0;
+    display:inline-flex
+}
+.footer-links li{
+    list-style: none;
+}
+.footer-links Li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+.footer-links Li a:hover{
+    background-color: white;
+    color:rgb(60, 2, 18) ;
+}
+.footer-icon{
+    position: relative;
+    float: left;
+    margin-right: auto;
+}
+.footer-rights{
+    color: white;
+}
+/*Home page css*/
+.home-container{
+    display: flex;
+    flex-direction: column;
+}
+.car-background{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height:70vh;
+    position:relative
+}
+.car-background img{
+    width: 100%;
+    height: 100%;
+}
+.top-text{
+    display: flex;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: rgb(60, 2, 18);
+    font-size: 3rem;
+    font-weight: 700;
+    top:20%;
+    left: 50%;
+    font-family:Allerta Stencil; 
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+@media(max-width:1000px){
+    .top-text{
+        font-size: 2rem;
+    }
+}
+@media(max-width:500px){
+    .top-text{
+        font-size: 1.6rem;
+    }
+}
+.services-header{
+    flex:1;
+    background-color:lightgray;
+}
+.services-header p{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:Allerta Stencil;
+    color: rgb(60, 2, 18);
+}
+.card-wrapper{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+    justify-items: center;
+}
+@media(max-width:750px){
+    .card-wrapper{
+      grid-template-columns:1fr
+    }
+  }
+@media(min-width:751px) and (max-width:1200px){
+    .card-wrapper{
+      grid-template-columns: 1fr  1fr;
+    }
+  }
+.service-card{
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+    border-radius: 3px;
+    width:300px;
+    background: url("./pics/card-background.jpg");
+    background-size:100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.card-image{
+    width: 100%;
+    height: 200px;
+}
+.card-title{
+    font-size: 3vh;
+    font-weight: 600;
+    color:rgb(131, 12, 46);
+}
+.card-attention-grabber{
+    font-size: 2vh;
+    font-weight: 600;
+    color: rgb(131, 12, 46);
+}
+.card-description{
+    font-size:2vh;
+    font-weight: 600;
+    color: rgb(131, 12, 46);
+}
+.card-button{
+    width: 70%;
+    border-color: maroon;
+    border-radius:3px;
+    height: 3vh ;
+    font-weight:600;
+    font-size: 2vh;
+    color: maroon;
+    transition:0.5s;
+    margin-bottom: 5px;
+}
+.card-button:hover{
+    background-color:rgb(60, 2, 18);
+    color: white;
+}
+/* About Us Page*/
+.about-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.about-background{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+.top-about-text{
+    flex: 1;
+    color: whitesmoke;
+    font-size: 3rem;
+    left: 50%;
+    font-family:Allerta Stencil;
+}
+.about-description{
+    margin-left: 10vh;
+    margin-right: 10vh;
+    background-color: whitesmoke;
+    border-radius:10px 50px 10px 50px;
+    margin-bottom: 10px;
+    font-family: Allerta Stencil;
+}
+.about-description p {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.description-title {
+    color: maroon;
+    font-size: 2.5rem !important;
+    padding-left: 10px !important;
+    padding-bottom: 0px !important;
+    font-family: Allerta Stencil;
+}
+/* Car Stats Page Css*/
+.carstats-container{
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(60, 2, 18);
+    margin-bottom: 5vh;
+}
+.car-search-title{
+    flex:1;
+}
+.car-search-title p{
+    text-align: center;
+    font-size: 3rem;
+    font-family:Allerta Stencil;
+    color: whitesmoke
+}
+.page-description{
+    margin-left: 10vh;
+    margin-right: 10vh;
+    background-color: whitesmoke;
+    border-radius:10px 50px 10px 50px
+}
+
+.page-description p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px;
+}
+.page-description .search-header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.page-description .start-search{
+    font-size: 2rem;
+    font-family: Allerta Stencil;
+}
+.vehicle-search{
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+.input-search{
+    display: flex;
+    justify-content:space-around;
+    border:5px solid rgb(131, 12, 46);
+    padding:2rem;
+    margin-bottom: 2rem;
+    border-radius:10px;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    align-items: center;
+}
+@media(max-width:1300px){
+    .input-search{
+      flex-direction: column;
+    }
+  }
+.input-search label{
+    font-family:Allerta Stencil;
+    font-weight: 600;
+}
+.vehicle-search select{
+    background-color: rgb(131, 12, 46);
+    color: white;
+    font-family: Allerta Stencil;
+    font-size: 1rem;
+    width: 7rem;
+}
+table, th, td {
+    border: 2px solid rgb(41, 29, 29);
+    border-collapse: collapse;
+}
+.display-container{
+    background-color: lightgrey;
+    border-radius:10px 50px 10px 50px
+}
+.display-table{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 5px;
+    background-color: rgb(131, 12, 46);
+    color: white;
+}
+/* Not Found Page*/
+.notfound-container{
+    display: flex;
+    flex-direction: column;
+}
